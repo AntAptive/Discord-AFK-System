@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord AFK System", "Discord AFK System\Discord AFK System.csproj", "{964803F1-C230-423B-8C77-B84449E27489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiodgElevator", "AudiodgElevator\AudiodgElevator.csproj", "{DC5A02AE-CBC4-46BC-861E-0E98BF9D982D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{964803F1-C230-423B-8C77-B84449E27489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964803F1-C230-423B-8C77-B84449E27489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964803F1-C230-423B-8C77-B84449E27489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964803F1-C230-423B-8C77-B84449E27489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5A02AE-CBC4-46BC-861E-0E98BF9D982D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5A02AE-CBC4-46BC-861E-0E98BF9D982D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5A02AE-CBC4-46BC-861E-0E98BF9D982D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5A02AE-CBC4-46BC-861E-0E98BF9D982D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
