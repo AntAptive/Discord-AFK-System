@@ -4,39 +4,10 @@ namespace Discord_AFK_System
 {
     public partial class audiodgElevation : Form
     {
-        public static string GetAudiodgCores()
-        {
-            var audiodg = Process.GetProcessesByName("audiodg");
-            if (audiodg.Length == 0) return string.Empty;
-
-            var affinity = audiodg[0].ProcessorAffinity.ToInt64();
-            var activeCores = new List<int>();
-
-            for (int i = 0; i < Environment.ProcessorCount; i++)
-            {
-                if ((affinity & (1L << i)) != 0)
-                {
-                    activeCores.Add(i);
-                }
-            }
-
-            return string.Join(", ", activeCores);
-        }
-
-        public static string GetAudiodgPriority()
-        {
-            var audiodg = Process.GetProcessesByName("audiodg");
-            if (audiodg.Length == 0) return string.Empty;
-
-            return audiodg[0].PriorityClass.ToString();
-        }
-
         public audiodgElevation()
         {
             InitializeComponent();
             cpuUpDown.Maximum = Environment.ProcessorCount - 1;
-            affinityLabel.Text = "Current Affinity: " + GetAudiodgCores();
-            priorityLabel.Text = "Current Priority: " + GetAudiodgPriority();
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
