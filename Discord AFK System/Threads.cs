@@ -67,6 +67,7 @@ namespace Discord_AFK_System.Threads
         public static void StartClock(string filePath, float time, CancellationTokenSource token)
         {
             Thread t = new Thread(() => QueueAudio(filePath, time, token));
+            t.IsBackground = true;
             t.Start();
             while (!token.IsCancellationRequested)
             {
@@ -109,6 +110,7 @@ namespace Discord_AFK_System.Threads
             totalTime = (int)time;
 
             var t = new Thread(() => StartClock(filePath, time, token));
+            t.IsBackground = true;
             t.Start();
             return t;
         }

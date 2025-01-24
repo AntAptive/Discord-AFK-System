@@ -8,6 +8,13 @@ namespace Discord_AFK_System
         public Form1()
         {
             InitializeComponent();
+
+            // Handle cancellation token if exited
+            Application.ApplicationExit += (s, e) =>
+            {
+                if (cts != null)
+                    cts.Cancel();
+            };
         }
 
         private string filePath;
